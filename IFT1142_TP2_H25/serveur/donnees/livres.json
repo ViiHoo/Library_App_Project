@@ -1,0 +1,641 @@
+[
+  {
+    "id": 400,
+    "titre": "Une aventure d'Astérix le gaulois. Le devin",
+    "idAuteur": 11,
+    "annee": 1972,
+    "pages": 48,
+    "categorie": "bandes dessinées",
+    "pochette": "Pochette_11_400.jpg"
+  },
+  {
+    "id": 300,
+    "titre": "Une aventure d'Astérix le gaulois. Astérix en Corse",
+    "idAuteur": 11,
+    "annee": 1973,
+    "pages": 48,
+    "categorie": "bandes dessinées",
+    "pochette": "Pochette_11_300.jpg"
+  },
+  {
+    "id": 200,
+    "titre": "Une aventure d'Astérix le gaulois. Le cadeau de César",
+    "idAuteur": 11,
+    "annee": 1974,
+    "pages": 48,
+    "categorie": "bandes dessinées",
+    "pochette": "Pochette_11_200.jpg"
+  },
+  {
+    "id": 500,
+    "titre": "Les filles de Caleb Tome 1. Le chant du coq",
+    "idAuteur": 1,
+    "annee": 1985,
+    "pages": 528,
+    "categorie": "roman",
+    "pochette": "Pochette_1_500.jpg"
+  },
+  {
+    "id": 125,
+    "titre": "Album de famille",
+    "idAuteur": 4,
+    "annee": 1985,
+    "pages": 454,
+    "categorie": "roman",
+    "pochette": "Pochette_4_125.jpg"
+  },
+  {
+    "id": 642,
+    "titre": "Les filles de Caleb Tome 2. Le cri de l'oie blanche",
+    "idAuteur": 1,
+    "annee": 1986,
+    "pages": 790,
+    "categorie": "roman",
+    "pochette": "Pochette_1_642.jpg"
+  },
+  {
+    "id": 234,
+    "titre": "Secrets",
+    "idAuteur": 4,
+    "annee": 1986,
+    "pages": 320,
+    "categorie": "roman",
+    "pochette": "Pochette_4_234.jpg"
+  },
+  {
+    "id": 350,
+    "titre": "La ronde des souvenirs",
+    "idAuteur": 4,
+    "annee": 1988,
+    "pages": 372,
+    "categorie": "roman",
+    "pochette": "Pochette_4_350.jpg"
+  },
+  {
+    "id": 124,
+    "titre": "Traversées",
+    "idAuteur": 4,
+    "annee": 1988,
+    "pages": 387,
+    "categorie": "roman",
+    "pochette": "Pochette_4_124.jpg"
+  },
+  {
+    "id": 237,
+    "titre": "Une autre vie",
+    "idAuteur": 4,
+    "annee": 1988,
+    "pages": 381,
+    "categorie": "roman",
+    "pochette": "Pochette_4_237.jpg"
+  },
+  {
+    "id": 900,
+    "titre": "La belle vie",
+    "idAuteur": 4,
+    "annee": 1989,
+    "pages": 451,
+    "categorie": "roman",
+    "pochette": "Pochette_4_900.jpg"
+  },
+  {
+    "id": 890,
+    "titre": "La vagabonde",
+    "idAuteur": 4,
+    "annee": 1989,
+    "pages": 410,
+    "categorie": "roman",
+    "pochette": "Pochette_4_890.jpg"
+  },
+  {
+    "id": 265,
+    "titre": "Le don de l'amour Loving",
+    "idAuteur": 4,
+    "annee": 1989,
+    "pages": 392,
+    "categorie": "roman",
+    "pochette": "Pochette_4_265.jpg"
+  },
+  {
+    "id": 354,
+    "titre": "Star",
+    "idAuteur": 4,
+    "annee": 1990,
+    "pages": 473,
+    "categorie": "roman",
+    "pochette": "Pochette_4_354.jpg"
+  },
+  {
+    "id": 453,
+    "titre": "Un parfait inconnu",
+    "idAuteur": 4,
+    "annee": 1990,
+    "pages": 361,
+    "categorie": "roman",
+    "pochette": "Pochette_4_453.jpg"
+  },
+  {
+    "id": 789,
+    "titre": "Zoya",
+    "idAuteur": 4,
+    "annee": 1990,
+    "pages": 470,
+    "categorie": "roman",
+    "pochette": "Pochette_4_789.jpg"
+  },
+  {
+    "id": 987,
+    "titre": "L'âme soeur",
+    "idAuteur": 7,
+    "annee": 1990,
+    "pages": 380,
+    "categorie": "roman",
+    "pochette": "Pochette_7_987.jpg"
+  },
+  {
+    "id": 765,
+    "titre": "Dors ma jolie",
+    "idAuteur": 6,
+    "annee": 1990,
+    "pages": 289,
+    "categorie": "suspense",
+    "pochette": "Pochette_6_765.jpg"
+  },
+  {
+    "id": 213,
+    "titre": "Marie LaFlamme Tome 1",
+    "idAuteur": 2,
+    "annee": 1991,
+    "pages": 398,
+    "categorie": "roman",
+    "pochette": "Pochette_2_213.jpg"
+  },
+  {
+    "id": 678,
+    "titre": "Cher Daddy",
+    "idAuteur": 4,
+    "annee": 1991,
+    "pages": 370,
+    "categorie": "roman",
+    "pochette": "Pochette_4_678.jpg"
+  },
+  {
+    "id": 912,
+    "titre": "Kaléidoscope",
+    "idAuteur": 4,
+    "annee": 1991,
+    "pages": 389,
+    "categorie": "roman",
+    "pochette": "Pochette_4_912.jpg"
+  },
+  {
+    "id": 983,
+    "titre": "Marie LaFlamme Tome 2. Nouvelle-France",
+    "idAuteur": 2,
+    "annee": 1992,
+    "pages": 383,
+    "categorie": "roman",
+    "pochette": "Pochette_2_983.jpg"
+  },
+  {
+    "id": 930,
+    "titre": "Les promesses de la passion",
+    "idAuteur": 4,
+    "annee": 1992,
+    "pages": 301,
+    "categorie": "roman",
+    "pochette": "Pochette_4_930.jpg"
+  },
+  {
+    "id": 934,
+    "titre": "Souvenirs du Vietnam",
+    "idAuteur": 4,
+    "annee": 1992,
+    "pages": 372,
+    "categorie": "roman",
+    "pochette": "Pochette_4_934.jpg"
+  },
+  {
+    "id": 222,
+    "titre": "Nous n'irons plus au bois",
+    "idAuteur": 6,
+    "annee": 1992,
+    "pages": 341,
+    "categorie": "suspense",
+    "pochette": "Pochette_6_222.jpg"
+  },
+  {
+    "id": 333,
+    "titre": "Recherche jeune femme aimant danser",
+    "idAuteur": 6,
+    "annee": 1992,
+    "pages": 342,
+    "categorie": "suspense",
+    "pochette": "Pochette_6_333.jpg"
+  },
+  {
+    "id": 777,
+    "titre": "Ces enfants d'ailleurs Tome 1. Même les oiseaux se sont tus",
+    "idAuteur": 1,
+    "annee": 1993,
+    "pages": 595,
+    "categorie": "roman",
+    "pochette": "Pochette_1_777.jpg"
+  },
+  {
+    "id": 999,
+    "titre": "Coups de coeur",
+    "idAuteur": 4,
+    "annee": 1993,
+    "pages": 320,
+    "categorie": "roman",
+    "pochette": "Pochette_4_999.jpg"
+  },
+  {
+    "id": 765,
+    "titre": "Joyaux",
+    "idAuteur": 4,
+    "annee": 1993,
+    "pages": 478,
+    "categorie": "roman",
+    "pochette": "Pochette_4_765.jpg"
+  },
+  {
+    "id": 645,
+    "titre": "La fin de l'été",
+    "idAuteur": 4,
+    "annee": 1993,
+    "pages": 378,
+    "categorie": "roman",
+    "pochette": "Pochette_4_645.jpg"
+  },
+  {
+    "id": 901,
+    "titre": "Un si grand amour",
+    "idAuteur": 4,
+    "annee": 1993,
+    "pages": 372,
+    "categorie": "roman",
+    "pochette": "Pochette_4_901.jpg"
+  },
+  {
+    "id": 905,
+    "titre": "Les ailes du destin",
+    "idAuteur": 5,
+    "annee": 1993,
+    "pages": 465,
+    "categorie": "roman",
+    "pochette": "Pochette_5_905.jpg"
+  },
+  {
+    "id": 845,
+    "titre": "La menace",
+    "idAuteur": 8,
+    "annee": 1993,
+    "pages": 63,
+    "categorie": "nouvelle",
+    "pochette": "Pochette_8_845.jpg"
+  },
+  {
+    "id": 890,
+    "titre": "La maison du guet",
+    "idAuteur": 6,
+    "annee": 1993,
+    "pages": 224,
+    "categorie": "suspense",
+    "pochette": "Pochette_6_890.jpg"
+  },
+  {
+    "id": 548,
+    "titre": "La nuit du renard",
+    "idAuteur": 6,
+    "annee": 1993,
+    "pages": 277,
+    "categorie": "suspense",
+    "pochette": "Pochette_6_548.jpg"
+  },
+  {
+    "id": 109,
+    "titre": "Le démon du passé",
+    "idAuteur": 6,
+    "annee": 1993,
+    "pages": 345,
+    "categorie": "suspense",
+    "pochette": "Pochette_6_109.jpg"
+  },
+  {
+    "id": 439,
+    "titre": "Un jour tu verras...",
+    "idAuteur": 6,
+    "annee": 1993,
+    "pages": 343,
+    "categorie": "suspense",
+    "pochette": "Pochette_6_439.jpg"
+  },
+  {
+    "id": 910,
+    "titre": "Marie LaFlamme Tome 3. La renarde",
+    "idAuteur": 2,
+    "annee": 1994,
+    "pages": 397,
+    "categorie": "roman",
+    "pochette": "Pochette_2_910.jpg"
+  },
+  {
+    "id": 915,
+    "titre": "Disparu",
+    "idAuteur": 4,
+    "annee": 1994,
+    "pages": 305,
+    "categorie": "roman",
+    "pochette": "Pochette_4_915.jpg"
+  },
+  {
+    "id": 925,
+    "titre": "La maison des jours heureux",
+    "idAuteur": 4,
+    "annee": 1994,
+    "pages": 496,
+    "categorie": "roman",
+    "pochette": "Pochette_4_925.jpg"
+  },
+  {
+    "id": 888,
+    "titre": "Naissances",
+    "idAuteur": 4,
+    "annee": 1994,
+    "pages": 356,
+    "categorie": "roman",
+    "pochette": "Pochette_4_888.jpg"
+  },
+  {
+    "id": 111,
+    "titre": "Le grand blanc",
+    "idAuteur": 5,
+    "annee": 1994,
+    "pages": 891,
+    "categorie": "roman",
+    "pochette": "Pochette_5_111.jpg"
+  },
+  {
+    "id": 999,
+    "titre": "Souviens-toi",
+    "idAuteur": 6,
+    "annee": 1994,
+    "pages": 388,
+    "categorie": "suspense",
+    "pochette": "Pochette_6_999.jpg"
+  },
+  {
+    "id": 222,
+    "titre": "Ces enfants d'ailleurs Tome 2. L'envol des tourterelles",
+    "idAuteur": 1,
+    "annee": 1995,
+    "pages": 408,
+    "categorie": "roman",
+    "pochette": "Pochette_1_222.jpg"
+  },
+  {
+    "id": 835,
+    "titre": "Accident",
+    "idAuteur": 4,
+    "annee": 1995,
+    "pages": 344,
+    "categorie": "roman",
+    "pochette": "Pochette_4_835.jpg"
+  },
+  {
+    "id": 836,
+    "titre": "Le cadeau",
+    "idAuteur": 4,
+    "annee": 1995,
+    "pages": 212,
+    "categorie": "roman",
+    "pochette": "Pochette_4_836.jpg"
+  },
+  {
+    "id": 837,
+    "titre": "Plein ciel",
+    "idAuteur": 4,
+    "annee": 1995,
+    "pages": 420,
+    "categorie": "roman",
+    "pochette": "Pochette_4_837.jpg"
+  },
+  {
+    "id": 624,
+    "titre": "Un monde de rêve",
+    "idAuteur": 4,
+    "annee": 1995,
+    "pages": 384,
+    "categorie": "roman",
+    "pochette": "Pochette_4_624.jpg"
+  },
+  {
+    "id": 625,
+    "titre": "Cinq jours a Paris",
+    "idAuteur": 4,
+    "annee": 1996,
+    "pages": 245,
+    "categorie": "roman",
+    "pochette": "Pochette_4_625.jpg"
+  },
+  {
+    "id": 526,
+    "titre": "L'anneau de Cassandra",
+    "idAuteur": 4,
+    "annee": 1996,
+    "pages": 397,
+    "categorie": "roman",
+    "pochette": "Pochette_4_526.jpg"
+  },
+  {
+    "id": 738,
+    "titre": "Maintenant et pour toujours",
+    "idAuteur": 4,
+    "annee": 1996,
+    "pages": 530,
+    "categorie": "roman",
+    "pochette": "Pochette_4_738.jpg"
+  },
+  {
+    "id": 538,
+    "titre": "Malveillance",
+    "idAuteur": 4,
+    "annee": 1996,
+    "pages": 391,
+    "categorie": "roman",
+    "pochette": "Pochette_4_538.jpg"
+  },
+  {
+    "id": 638,
+    "titre": "Ce que vivent les roses",
+    "idAuteur": 6,
+    "annee": 1996,
+    "pages": 285,
+    "categorie": "suspense",
+    "pochette": "Pochette_6_638.jpg"
+  },
+  {
+    "id": 426,
+    "titre": "Douce nuit",
+    "idAuteur": 6,
+    "annee": 1996,
+    "pages": 213,
+    "categorie": "suspense",
+    "pochette": "Pochette_6_426.jpg"
+  },
+  {
+    "id": 289,
+    "titre": "Honneur et Courage",
+    "idAuteur": 4,
+    "annee": 1997,
+    "pages": 350,
+    "categorie": "roman",
+    "pochette": "Pochette_4_289.jpg"
+  },
+  {
+    "id": 389,
+    "titre": "La foudre",
+    "idAuteur": 4,
+    "annee": 1997,
+    "pages": 410,
+    "categorie": "roman",
+    "pochette": "Pochette_4_389.jpg"
+  },
+  {
+    "id": 489,
+    "titre": "Une saison de passion",
+    "idAuteur": 4,
+    "annee": 1997,
+    "pages": 565,
+    "categorie": "roman",
+    "pochette": "Pochette_4_489.jpg"
+  },
+  {
+    "id": 589,
+    "titre": "L'Homme au masque",
+    "idAuteur": 7,
+    "annee": 1997,
+    "pages": 474,
+    "categorie": "roman",
+    "pochette": "Pochette_7_589.jpg"
+  },
+  {
+    "id": 982,
+    "titre": "Joyeux Noël Merry Christmas",
+    "idAuteur": 6,
+    "annee": 1997,
+    "pages": 230,
+    "categorie": "suspense",
+    "pochette": "Pochette_6_982.jpg"
+  },
+  {
+    "id": 983,
+    "titre": "La maison du clair de lune, suivi de Vol de routine",
+    "idAuteur": 6,
+    "annee": 1997,
+    "pages": 363,
+    "categorie": "suspense",
+    "pochette": "Pochette_6_983.jpg"
+  },
+  {
+    "id": 984,
+    "titre": "Tu m'appartiens",
+    "idAuteur": 6,
+    "annee": 1997,
+    "pages": 341,
+    "categorie": "suspense",
+    "pochette": "Pochette_6_984.jpg"
+  },
+  {
+    "id": 985,
+    "titre": "Le Fantôme",
+    "idAuteur": 4,
+    "annee": 1998,
+    "pages": 416,
+    "categorie": "roman",
+    "pochette": "Pochette_4_985.jpg"
+  },
+  {
+    "id": 555,
+    "titre": "Le ranch, suivi de Amour",
+    "idAuteur": 4,
+    "annee": 1998,
+    "pages": 502,
+    "categorie": "roman",
+    "pochette": "Pochette_4_555.jpg"
+  },
+  {
+    "id": 557,
+    "titre": "Ni vue ni connue",
+    "idAuteur": 6,
+    "annee": 1998,
+    "pages": 266,
+    "categorie": "suspense",
+    "pochette": "Pochette_6_557.jpg"
+  },
+  {
+    "id": 556,
+    "titre": "La petite fille qui aimait trop les allumettes",
+    "idAuteur": 3,
+    "annee": 1998,
+    "pages": 180,
+    "categorie": "roman",
+    "pochette": "Pochette_3_556.jpg"
+  },
+  {
+    "id": 558,
+    "titre": "Une si longue nuit",
+    "idAuteur": 6,
+    "annee": 1999,
+    "pages": 158,
+    "categorie": "suspense",
+    "pochette": "Pochette_6_558.jpg"
+  },
+  {
+    "id": 755,
+    "titre": "Et nous nous reverrons...",
+    "idAuteur": 6,
+    "annee": 2000,
+    "pages": 356,
+    "categorie": "suspense",
+    "pochette": "Pochette_6_755.jpg"
+  },
+  {
+    "id": 655,
+    "titre": "Soins intensifs",
+    "idAuteur": 2,
+    "annee": 2001,
+    "pages": 251,
+    "categorie": "roman",
+    "pochette": "Pochette_2_655.jpg"
+  },
+  {
+    "id": 855,
+    "titre": "Avant de te dire adieu",
+    "idAuteur": 6,
+    "annee": 2001,
+    "pages": 346,
+    "categorie": "suspense",
+    "pochette": "Pochette_6_855.jpg"
+  },
+  {
+    "id": 111,
+    "titre": "Prisonniers du temps",
+    "idAuteur": 10,
+    "annee": 2001,
+    "pages": 620,
+    "categorie": "roman",
+    "pochette": "Pochette_10_111.jpg"
+  },
+  {
+    "id": 134,
+    "titre": "Dans la rue où vit celle que j'aime",
+    "idAuteur": 6,
+    "annee": 2002,
+    "pages": 348,
+    "categorie": "suspense",
+    "pochette": "Pochette_6_134.jpg"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "name": "ift1142_tp2_h25",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Viktor Hoang",
+  "license": "ISC",
+  "description": "Application Web en mode SPA de gestion de livres avec Node.js, Express et Bootstrap.",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2"
+  }
+}

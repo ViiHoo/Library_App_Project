@@ -1,0 +1,124 @@
+/* Arrière-plan du site */
+/* Applique une image en arrière-plan sur tout le corps de la page, répétée et fixée à l'écran */
+body {
+    background-image: url('../images/Arriere-plan.png');
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+
+/* La barre de navigation personnalisée */
+/* Change la couleur de fond de la barre de navigation */
+.bg-nav-couleur {
+    background-color: bisque !important;
+}
+
+/* Ajoute un espacement entre les éléments de navigation */
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+/* Augmente la taille du texte des liens de navigation */
+.navbar-nav .nav-link {
+    font-size: 1.15em;
+}
+
+
+/* Style du modal */
+/* Change la couleur d'arrière-plan de l'en-tête du modal */
+.modal-header {
+    background-color: #fff4e6;
+}
+
+/* Espacements verticaux pour divers éléments du formulaire */
+.espacement-haut {
+    margin-top: 10px;
+}
+
+.espacement-haut-plus {
+    margin-top: 20px;
+}
+
+/* Espacement spécifique autour du bouton "Ajouter" dans le formulaire */
+.espacement-bouton-ajouter {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* Définit une largeur maximale pour le modal personnalisé */
+
+.modal-custom {
+    max-width: 550px;
+}
+
+
+/* Style des cards */
+/* Centre les cartes horizontalement */
+#contenuLivres {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style général des cartes */
+.card {
+    background-color: #fff4e6;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);;
+}
+
+/* Style des images de couverture dans les cartes */
+.card-img-top {
+    width: 100%;
+    height: 400px;
+    object-fit: contains;
+    padding: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+/* Titre centré à l'intérieur de la carte */
+.card-title {
+    min-height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 5px 0;
+}
+
+/* Centrage du contenu du corps de la carte */
+.card-body {
+    display: flex;
+    justify-content: center;
+}
+
+/* Espacement horizontal entre les boutons de la carte */
+.card-body .btn {
+    margin: 0 5px
+}
+
+/* Style personnalisé pour le bouton de modification */
+.btn-warning {
+    background-color: #f39c12;
+    border-color: #d39e00;
+}
+
+/* Couleur blanche pour l'icône crayon du bouton de modification */
+.btn-warning .bi-pencil-square {
+    color: white;
+}
+
+/* Style personnalisé pour le bouton de suppression */
+.btn-danger {
+    background-color: #e74c3c;
+    border-color: #c0392b;
+}
+
+
+/* Toast de suppression */
+/* Augmente la largeur de la notification toast affichée lors de la suppression */
+#toastSuppression {
+    width: 400px; /* Augmenter la largeur à 400px */
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librairie</title>
+    <link rel="stylesheet" href="utilitaires/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="utilitaires/icons-1.8.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="utilitaires/jquery-3.7.1.min.js"></script>
+    <script src="utilitaires/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/requetes.js"></script>
+    <script src="js/vues.js"></script>
+</head>
+
+<body>
+    <!-- Barre de navigation -->
+     <header>
+        <nav class="navbar navbar-expand-lg bg-nav-couleur">
+            <div class="container-fluid">
+
+                <!-- Logo cliquable vers la page d'accueil -->
+                <a class="navbar-brand ms-4" href="/"><img src="images/Logo.png" alt="Logo/Accueil" width="150" height="75"></a>
+
+                <!-- Bouton hamburger pour menu mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Liens du menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                        <!-- Ajouter un livre -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#idModalAjouterLivre">
+                                <i class="bi bi-plus-circle"></i> Ajouter un livre
+                            </a>
+                        </li>
+
+                        <!-- Lister les livres -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="chargerLivres();">
+                                <i class="bi bi-book"></i> Lister les livres
+                            </a>
+                        </li>
+
+                        <!-- Filtrer par -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-filter"></i> Filtrer par
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#" onclick="filtrerParCategorie();">Catégorie</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="filtrerParAnnee();">Année</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="filtrerParAuteur();">Auteur</a></li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Trier par -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="triDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="bi bi-sort-down-alt"></i> Trier par
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="triDropdown">
+                              <li><a class="dropdown-item" href="#" onclick="trierLivres('id', true)">
+                                <i class="fas fa-arrow-up-1-9 me-2 text-primary"></i> ID du livre (croissant)
+                              </a></li>
+                              <li><a class="dropdown-item" href="#" onclick="trierLivres('id', false)">
+                                <i class="fas fa-arrow-down-9-1 me-2 text-primary"></i> ID du livre (décroissant)
+                              </a></li>
+                              <li><a class="dropdown-item" href="#" onclick="trierLivres('titre', true)">
+                                <i class="fas fa-font me-2 text-success"></i> Titre (A → Z)
+                              </a></li>
+                              <li><a class="dropdown-item" href="#" onclick="trierLivres('titre', false)">
+                                <i class="fas fa-font me-2 text-success"></i> Titre (Z → A)
+                              </a></li>
+                              <li><a class="dropdown-item" href="#" onclick="trierLivres('idAuteur', true)">
+                                <i class="fas fa-user-edit me-2 text-warning"></i> Auteur (ID croissant)
+                              </a></li>
+                              <li><a class="dropdown-item" href="#" onclick="trierLivres('idAuteur', false)">
+                                <i class="fas fa-user-edit me-2 text-warning"></i> Auteur (ID décroissant)
+                              </a></li>
+                              <li><a class="dropdown-item" href="#" onclick="trierLivres('annee', true)">
+                                <i class="fas fa-calendar-alt me-2 text-info"></i> Année (ancienne → récente)
+                              </a></li>
+                              <li><a class="dropdown-item" href="#" onclick="trierLivres('annee', false)">
+                                <i class="fas fa-calendar-alt me-2 text-info"></i> Année (récente → ancienne)
+                              </a></li>
+                              <li><a class="dropdown-item" href="#" onclick="trierLivres('pages', true)">
+                                <i class="fas fa-book-open me-2 text-danger"></i> Pages (croissant)
+                              </a></li>
+                              <li><a class="dropdown-item" href="#" onclick="trierLivres('pages', false)">
+                                <i class="fas fa-book-open me-2 text-danger"></i> Pages (décroissant)
+                              </a></li>
+                            </ul>
+                          </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+     </header>
+    <!-- Fin de la barre de navigation -->
+
+    <!-- Contenu principal -->
+    <main class="container my-4">
+        <div class="row" id="contenuLivres">
+            <!-- Les livres seront affichés ici en utilisant JavaScript -->
+        </div>
+    </main>
+
+    <!-- Modal pour ajouter un livre -->
+    <div class="modal fade" id="idModalAjouterLivre" tabindex="-1" aria-labelledby="modalAjouterLivreLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-custom">
+            <div class="modal-content rounded-4 shadow">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modalAjouterLivreLabel">Ajouter un livre</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formAjoutLivre" class="row" enctype="multipart/form-data">
+                        
+                        <!-- Première ligne: Titre -->
+                        <div class="col-md-12">
+                            <label for="titre" class="form-label">Titre</label>
+                            <input type="text" class="form-control" id="titre" required>
+                        </div>
+
+                        <!-- Deuxième ligne: ID Livre et ID Auteur -->
+                        <div class="col-md-6 espacement-haut">
+                            <label for="idLivre" class="form-label">ID Livre</label>
+                            <input type="number" class="form-control" id="idLivre" required>
+                        </div>
+                        <div class="col-md-6 espacement-haut">
+                            <label for="idAuteur" class="form-label">ID Auteur</label>
+                            <input type="number" class="form-control" id="idAuteur" required>
+                        </div>
+
+                        <!-- Troisième ligne: Année et Nombre de pages -->
+                        <div class="col-md-6 espacement-haut">
+                            <label for="annee" class="form-label">Année</label>
+                            <input type="number" class="form-control" id="annee" required>
+                        </div>
+                        <div class="col-md-6 espacement-haut">
+                            <label for="pages" class="form-label">Nombre de pages</label>
+                            <input type="number" class="form-control" id="pages" required>
+                        </div>
+
+                        <!-- Quatrième ligne: Catégorie (form-select) -->
+                        <div class="col-md-12 espacement-haut-plus">
+                            <label for="categorie" class="form-label">Catégorie</label>
+                            <select class="form-select" id="categorie" required onchange="verifierAutreCategorie();">
+                                <option value="" disabled selected>Veuillez choisir une catégorie</option>
+                                <option value="bandes dessinées">Bandes dessinées</option>
+                                <option value="nouvelle">Nouvelle</option>
+                                <option value="roman">Roman</option>
+                                <option value="suspense">Suspense</option>
+                                <option value="autre">Autre (saisir ci-dessous)</option>
+                            </select>
+                        </div>
+
+                        <!-- Champ de saisie pour la catégorie "Autre" -->
+                        <div class="col-md-12 espacement-haut-plus" id="champCategorieAutre" style="display:none;">
+                            <label for="categorieAutre" class="form-label">Nouvelle catégorie</label>
+                            <input type="text" class="form-control" id="categorieAutre" placeholder="Entrez la nouvelle catégorie">
+                        </div>
+
+                        <!-- Cinquième ligne: Image de couverture -->
+                        <div class="col-md-12 espacement-haut-plus">
+                            <label for="image" class="form-label">Image de couverture (pochette)</label>
+                            <input type="file" class="form-control" id="pochette" accept="images/pochettes/*">
+                        </div>
+
+                        <!-- Boutons "Ajouter et "Annuler -->
+                        <div class="col-12 text-center espacement-bouton-ajouter">
+                            <button type="submit" class="btn btn-primary" id="btnSubmit">Ajouter</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal pour modifier un livre -->
+    <div class="modal fade" id="idModalModifierLivre" tabindex="-1" aria-labelledby="modalModifierLivreLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-custom">
+            <div class="modal-content rounded-4 shadow">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modalModifierLivreLabel">Modifier un livre</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formModifierLivre" class="row">
+
+                        <!-- Première ligne: Titre -->
+                        <div class="col-md-12">
+                            <label for="titreModif" class="form-label">Titre</label>
+                            <input type="text" class="form-control" id="titreModif" required>
+                        </div>
+            
+                        <!-- Deuxième ligne: ID Livre et ID Auteur -->
+                        <div class="col-md-6 espacement-haut">
+                            <label for="idLivreModif" class="form-label">ID Livre</label>
+                            <input type="number" class="form-control" id="idLivreModif" required readonly>
+                        </div>
+                        <div class="col-md-6 espacement-haut">
+                            <label for="idAuteurModif" class="form-label">ID Auteur</label>
+                            <input type="number" class="form-control" id="idAuteurModif" required>
+                        </div>
+            
+                        <!-- Troisième ligne: Année et Nombre de pages -->
+                        <div class="col-md-6 espacement-haut">
+                            <label for="anneeModif" class="form-label">Année</label>
+                            <input type="number" class="form-control" id="anneeModif" required>
+                        </div>
+                        <div class="col-md-6 espacement-haut">
+                            <label for="pagesModif" class="form-label">Nombre de pages</label>
+                            <input type="number" class="form-control" id="pagesModif" required>
+                        </div>
+            
+                        <!-- Quatrième ligne: Catégorie (form-select) -->
+                        <div class="col-md-12 espacement-haut-plus">
+                            <label for="categorieModif" class="form-label">Catégorie</label>
+                            <select class="form-select" id="categorieModif" required onchange="verifierAutreCategorieModif();">
+                                <option value="" disabled selected>Veuillez choisir une catégorie</option>
+                                <option value="bandes dessinées">Bandes dessinées</option>
+                                <option value="nouvelle">Nouvelle</option>
+                                <option value="roman">Roman</option>
+                                <option value="suspense">Suspense</option>
+                                <option value="autre">Autre (saisir ci-dessous)</option>
+                            </select>
+                        </div>
+            
+                        <!-- Champ de saisie pour la catégorie "Autre" -->
+                        <div class="col-md-12 espacement-haut-plus" id="champCategorieAutreModif" style="display:none;">
+                            <label for="categorieAutreModif" class="form-label">Nouvelle catégorie</label>
+                            <input type="text" class="form-control" id="categorieAutreModif" placeholder="Entrez la nouvelle catégorie">
+                        </div>
+            
+                        <!-- Boutons "Mettre à jour" et "Annuler" -->
+                        <div class="col-12 text-center espacement-bouton-ajouter">
+                            <button type="submit" class="btn btn-primary">Mettre à jour</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Toast de succès pour l'ajout et la modification-->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toastSuccès" class="toast align-items-center text-white bg-success border-0 shadow-lg rounded-3" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex align-items-center">
+            <div class="toast-body fs-5">
+            Livre enregistré avec succès.
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Fermer"></button>
+        </div>
+        </div>
+    </div>
+
+    <!-- Toast de confirmation de suppression -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toastSuppression" class="toast align-items-center text-white bg-danger border-0 shadow-lg rounded-3" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex align-items-center">
+                <!-- Message -->
+                <div class="toast-body">
+                    <strong class="fs-5">Êtes-vous sûr(e) de vouloir supprimer ce livre ?</strong><br>
+                    Cette action est irréversible.
+                </div>
+                <!-- Boutons -->
+                <div class="ms-3 d-flex align-items-center w-100">
+                    <button type="button" class="btn btn-light btn-sm me-2 w-50" onclick="confirmerSuppression();">
+                        <i class="bi bi-check-lg text-success"></i> Oui
+                    </button>
+                    <button type="button" class="btn btn-light btn-sm ms-2 w-50 me-3" data-bs-dismiss="toast" aria-label="Close">
+                        <i class="bi bi-x-lg text-danger"></i> Non
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Chargement des livres
+        function chargerLivres() {
+            afficherLivres();
+        }
+    </script>
+
+</body>
+</html>
